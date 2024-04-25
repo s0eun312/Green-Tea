@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>INFO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="general_style.css" rel="stylesheet">
+
+    <style>
+      /* 링크 요소
+      =======================================*/
+      dd a {
+        color: #c7dab0;
+        text-decoration: none;
+      }
+      dd a:hover {
+        color: #86f400;
+        text-decoration: none;
+      }
+
+      /* 녹차 정의
+      =======================================*/
+      #what {
+        background-image: url("img/info_greentea.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 550px;
+        text-align: center; /* 텍스트 가운데 정렬 */
+        display: flex; /* 내용을 가운데 정렬하기 위해 사용 */
+        justify-content: center; /* 가로 정렬 중앙 */
+        align-items: center; /* 세로 정렬 중앙 */
+        position: relative; /* 자식 요소에 대한 상대적 위치 설정 */
+      }
+      /* before 요소 이용하여 배경 이미지에 투명도 적용 */
+      #what::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.384); /* 배경 색상에 투명도 덧씌움 */
+        z-index: 1; /* 텍스트가 투명도 위로 올라오도록 z-index 설정 */
+      }
+      dl {
+        color: #fff;
+        z-index: 2;
+      }
+      dt {
+        margin-top: 30px;
+        font-size: 3.5rem;
+        font-weight: bold;
+      }
+      dt p {
+        font-size: 1.5rem;
+        font-weight: normal;
+      }
+      dd {
+        line-height: 2rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-top: 50px;
+      }
+      dd span {
+        font-size: 1rem;
+        line-height: 5rem;
+      }
+
+      /* 녹차와 말차
+      =======================================*/
+      #section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 100px auto;
+      }
+      #section img {
+        width: 250px;
+        height: auto;
+        border-radius: 50%;
+      }
+      #section h3 {
+        color: darkgreen;
+        font-size: 1.8rem;
+        margin: 10px auto 30px auto;
+      }
+      #section p {
+        color: #000;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+      }
+      .line {
+        border-bottom: 1px solid darkgreen;
+        width: 80px;
+        margin: 50px auto 30px auto;
+        justify-content: center;
+      }
+      .greentea, .matcha {
+        background: #ffffffc0;
+        border-radius: 5%;
+        padding: 30px;
+      }
+      .greentea {
+        margin-right: 50px;
+      }
+      .greentea p span, .matcha p span {
+        color: green;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+      .difference {
+        width: 100%;
+        height: auto;
+        background: #ffffffc0;
+        padding: 30px;
+        margin-bottom: 100px;
+      }
+      .text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: green;
+      }
+      .text span {
+        text-decoration: underline;
+        color: #03d326;
+      }
+      .difference table {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-collapse: collapse;
+        margin-top: 35px;
+      }
+      th, td {
+        border: 1px solid green;
+        padding: 15px;
+        font-size: 1rem;
+      }
+      th {
+        padding: 15px 30px;
+        background: #c7dab0;
+      }
+    </style>
+</head>
+<body>
+  <header>
+    <h1>
+      <a href="Index.html">
+        <span>Green Tea</span>&nbsp;&nbsp;&nbsp;| 녹차
+      </a>
+    </h1>
+    <nav>
+      <ul class="header-nav">
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Info.html">INFO</a></li>&nbsp;|
+        <li><a href="Effect.html">&nbsp;EFFECT</a></li>&nbsp;|
+        <li><a href="History.html">&nbsp;HISTORY</a></li>&nbsp;|
+        <li><a href="Food.html">&nbsp;FOOD</a></li>&nbsp;|
+        <li><a href="Recommend.html">&nbsp;RECOMMEND</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div id="what">
+      <dl>
+        <dt>
+          녹차<p>[ nokcha / Green Tea , 綠茶 ]</p>
+        </dt>
+        <dd>
+          발효시키지 않은 찻잎[茶葉]을 사용해서 만든 차.<br>
+          차는 보통 가공 방법과, 산화 상태에 따라 녹차, 백차, 청차, 황차, 홍차, 흑차로 나뉘는데<br>
+          그중에서 산화시키지 않은 찻잎을 사용하여 만든 차를 '녹차'라고 한다.<br>
+          <span><a href="https://namu.wiki/w/%EB%85%B9%EC%B0%A8#s-1">출처 이동</a></span>
+        </dd>
+      </dl>
+    </div>
+
+    <div id="section">
+      <div class="greentea">
+        <h3>녹차</h3>
+        <img src="img/greentea_img.jpg">
+        <div class="line"></div>
+        <p class="greentea-txt">
+          우리가 흔히 마시는<br><span>'잎 차'</span>
+        </p>
+      </div>
+      <div class="matcha">
+        <h3>말차</h3>
+        <img src="img/matcha_img.jpg">
+        <div class="line"></div>
+        <p class="matcha-txt">
+          녹차를 갈아 만든<br><span>'분말 차'</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="difference">
+      <p class="text">
+        녹차와 말차는 크게&nbsp;<span>시음 방법</span>이 다르다.
+      </p>
+      <table>
+        <tr>
+          <th>녹차</th>
+          <td>
+            <p>
+              다 자란 찻잎을 열로 볶는 방식.
+              <br>말린 찻잎을 물에 우려내어 마신다.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <th>말차</th>
+          <td>
+            <p>
+              새순을 증기로 쪄낸 녹차를 가루로 만든 형태.
+              <br>뜨거운 물을 붓고, 솔로 저어 마신다.
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    <div class="class">
+      <img src="img/footer_icon.png">
+      <p>
+        Class.고급웹퍼블리싱 <br>
+        Prof.이수경 교수님
+      </p>
+    </div>
+    <div class="copyright">
+      <p>
+        <span>Copyright</span> 2024. kaywon <br>
+        디지털미디어디자인학과 22261034 류소은 inc. all rights reserved.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

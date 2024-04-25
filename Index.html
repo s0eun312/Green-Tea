@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>INDEX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* ------ 기본 설정 ----- */
+        * {
+            /* 마진 패딩 제거 */
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-image: url(img/Index_bg.jpg);
+            background-repeat: no-repeat; /* 반복 X */
+            background-position: center top; /* 중앙 기준 */
+            background-size: cover; /* 이미지가 전체 영역을 채우도록 */
+            min-height: 100vh; /* 최소 높이 설정 */
+        }
+
+        /* ------ a 링크 ----- */
+        a:link {
+            color: lightgreen;
+            text-decoration: none;
+        }
+        a:visited {
+            color: lightgreen;
+        }
+        a:hover {
+            color: lightyellow;
+            font-weight: bold;
+        }
+        a:active {
+            color: skyblue;
+        }
+
+        /* ------ 인덱스 ----- */
+        #index {
+            background: rgba(0, 63, 0, 0.655);
+            width: 60%;
+            height: 100vh; /* 화면 끝까지 차도록 설정 */
+            margin-left: auto; /* 오른쪽으로 이동 */
+            display: flex;
+            justify-content: center; /* 가로 중앙 정렬 */
+            align-items: center; /* 세로 중앙 정렬 */
+
+        }
+
+        /* ------ 타이틀 ----- */
+        .content {
+            text-align: left; /* 텍스트를 오른쪽으로 정렬 */
+            color: #fff;
+            padding: 20px;
+            font-family: 'pretendard';
+        }
+        .title {
+            margin-bottom: 40px;
+        }
+        .title h1 {
+            font-size: 5rem;
+        }
+        .title p {
+            font-size: 2.5rem;
+            /* font-weight: bold; */
+            margin-left: 5px;
+        }
+
+        /* ------ 네비게이션 ----- */
+        nav {
+            font-size: 1.5rem;
+        }
+        nav ul {
+            display: flex;
+            color: lightgreen;
+        }
+        nav li {
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="index">
+        <div class="content">
+            <div class="title">
+                <h1>Green Tea</h1>
+                <p>녹차 綠茶 🌿🌿🌿</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="info.html">INFO</a></li>&nbsp;|
+                    <li><a href="effect.html">&nbsp;EFFECT</a></li>&nbsp;|
+                    <li><a href="history.html">&nbsp;HISTORY</a></li>&nbsp;|
+                    <li><a href="food.html">&nbsp;FOOD</a></li>&nbsp;|
+                    <li><a href="recommend.html">&nbsp;RECOMMEND</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</body>
+</html>
